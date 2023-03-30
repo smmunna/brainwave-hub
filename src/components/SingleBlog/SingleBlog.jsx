@@ -5,7 +5,8 @@ import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 const bookmarkColor = {
     color: "red"
 }
-const SingleBlog = () => {
+const SingleBlog = ({blog}) => {
+    // const{id,author_name,}
     return (
         <div>
             <div className="single-card p-5">

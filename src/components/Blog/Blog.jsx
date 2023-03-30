@@ -7,13 +7,18 @@ const Blog = () => {
     useEffect(() => {
         fetch('brainwave.json')
             .then(res => res.json())
-            .then(data => console.log(data))
+            .then(data => setBlogs(data))
     }, [])
     return (
         <div>
             <div className="blog flex flex-col-reverse lg:flex-row px-12">
                 <div className="blog-section w-full px-12">
-                    <SingleBlog />
+                {
+                    blogs.map(blog=><SingleBlog 
+                    key={blog.id}
+                    blog={blog}
+                     />)
+                }
                 </div>
                 <div className="sidebar w-full lg:w-96 p-4">
                     <Sidebar />

@@ -1,38 +1,38 @@
 [
     {
         "id":4001,
-        "author-name":"Minhazul Abedin Munna",
-        "blog-title":"Advanced JavaScript Concepts Every Developer Should Know",
-        "author-img":"https://yt3.googleusercontent.com/ytc/AL5GRJXZ3bjEdOHILjVQpNk6GPlLUrQspEoY4EIhN9hA4g=s900-c-k-c0x00ffffff-no-rj",
-        "blog-cover":"https://img.freepik.com/free-photo/programming-script-text-coding-word_53876-64939.jpg?w=1060&t=st=1680188016~exp=1680188616~hmac=84085b8952e2d5703b719ab679ea772ad14f431ca321ebafec401b8359946398",
-        "read-time":4,
-        "published-date":"February 14, 2023"
+        "author_name":"Minhazul Abedin Munna",
+        "blog_title":"Advanced JavaScript Concepts Every Developer Should Know",
+        "author_img":"https://yt3.googleusercontent.com/ytc/AL5GRJXZ3bjEdOHILjVQpNk6GPlLUrQspEoY4EIhN9hA4g=s900-c-k-c0x00ffffff-no-rj",
+        "blog_cover":"https://img.freepik.com/free-photo/programming-script-text-coding-word_53876-64939.jpg?w=1060&t=st=1680188016~exp=1680188616~hmac=84085b8952e2d5703b719ab679ea772ad14f431ca321ebafec401b8359946398",
+        "read_time":4,
+        "published_date":"February 14, 2023"
     },
     {
         "id":4002,
-        "author-name":"Md Omaer Alam",
-        "blog-title":"Building Scalable Web Apps with React: Tips and Tricks",
-        "author-img":"https://scontent.fdac5-1.fna.fbcdn.net/v/t39.30808-1/273401612_475676477513102_2842513126240366988_n.jpg?stp=dst-jpg_p320x320&_nc_cat=101&ccb=1-7&_nc_sid=7206a8&_nc_ohc=35S7QpNY9cAAX-7R0RO&_nc_ht=scontent.fdac5-1.fna&oh=00_AfARCBlv5-WCAEWa7NC90MKb4gQjVvoT9b8b_layModo4w&oe=6429F17D",
-        "blog-cover":"https://img.freepik.com/free-photo/tips-restaurent-concept_53876-120029.jpg?w=996&t=st=1680188831~exp=1680189431~hmac=17a18bb265291f2a3c4fa930aab6864c7a65802153412f547ab031537da8a0c5",
-        "read-time":2,
-        "published-date":"March 10, 2023"
+        "author_name":"Md Omaer Alam",
+        "blog_title":"Building Scalable Web Apps with React: Tips and Tricks",
+        "author_img":"https://scontent.fdac5-1.fna.fbcdn.net/v/t39.30808-1/273401612_475676477513102_2842513126240366988_n.jpg?stp=dst-jpg_p320x320&_nc_cat=101&ccb=1-7&_nc_sid=7206a8&_nc_ohc=35S7QpNY9cAAX-7R0RO&_nc_ht=scontent.fdac5-1.fna&oh=00_AfARCBlv5-WCAEWa7NC90MKb4gQjVvoT9b8b_layModo4w&oe=6429F17D",
+        "blog_cover":"https://img.freepik.com/free-photo/tips-restaurent-concept_53876-120029.jpg?w=996&t=st=1680188831~exp=1680189431~hmac=17a18bb265291f2a3c4fa930aab6864c7a65802153412f547ab031537da8a0c5",
+        "read_time":2,
+        "published_date":"March 10, 2023"
     },
     {
         "id":4003,
-        "author-name":"Afia Binte Abdullah",
-        "blog-title":"The Future of JavaScript: Exploring the Latest Features and Updates",
-        "author-img":"https://scontent.fdac5-2.fna.fbcdn.net/v/t39.30808-1/336272208_232141362637877_8553180394003065196_n.jpg?stp=dst-jpg_p320x320&_nc_cat=101&ccb=1-7&_nc_sid=7206a8&_nc_ohc=-7R-QZA0THEAX8g7Od5&_nc_ht=scontent.fdac5-2.fna&oh=00_AfDxFWV75bxDceIx4udT70lHerQ2GuQ0BUNqYzgPAEmMDg&oe=642A55B9",
-        "blog-cover":"https://img.freepik.com/free-photo/woman-hacker-using-dangerous-virous-steal-bank-information-programmer-writing-malware-cyber-attacks-using-performance-laptop-during-midnight_482257-6694.jpg?w=996&t=st=1680188919~exp=1680189519~hmac=b4fc3c1db64ef8f38269dc356717222f96a30f2409dbff43f8378762ffc7324a",
-        "read-time":5,
-        "published-date":"January 21, 2023"
+        "author_name":"Afia Binte Abdullah",
+        "blog_title":"The Future of JavaScript: Exploring the Latest Features and Updates",
+        "author_img":"https://scontent.fdac5-2.fna.fbcdn.net/v/t39.30808-1/336272208_232141362637877_8553180394003065196_n.jpg?stp=dst-jpg_p320x320&_nc_cat=101&ccb=1-7&_nc_sid=7206a8&_nc_ohc=-7R-QZA0THEAX8g7Od5&_nc_ht=scontent.fdac5-2.fna&oh=00_AfDxFWV75bxDceIx4udT70lHerQ2GuQ0BUNqYzgPAEmMDg&oe=642A55B9",
+        "blog_cover":"https://img.freepik.com/free-photo/woman-hacker-using-dangerous-virous-steal-bank-information-programmer-writing-malware-cyber-attacks-using-performance-laptop-during-midnight_482257-6694.jpg?w=996&t=st=1680188919~exp=1680189519~hmac=b4fc3c1db64ef8f38269dc356717222f96a30f2409dbff43f8378762ffc7324a",
+        "read_time":5,
+        "published_date":"January 21, 2023"
     },
     {
         "id":4004,
-        "author-name":"Abid Hasan",
-        "blog-title":"Optimizing Performance in React: Best Practices for Faster Apps",
-        "author-img":"https://scontent.fdac5-1.fna.fbcdn.net/v/t39.30808-1/326413514_1351354055625954_6838821030240734876_n.jpg?stp=dst-jpg_p320x320&_nc_cat=105&ccb=1-7&_nc_sid=f67be1&_nc_ohc=qdY90Nq03gEAX-jCnnG&_nc_ht=scontent.fdac5-1.fna&oh=00_AfCJn-wcCj1LDGgFoLNCwXFisq7aMQal5DmQEweRhUfn5Q&oe=642B76F8",
-        "blog-cover":"https://img.freepik.com/free-photo/mobiles-apps_53876-119987.jpg?w=996&t=st=1680188985~exp=1680189585~hmac=212ea1e2aa907bfb9182938ed1b40c85adf26375f24ab58632a8894626fc631b",
-        "read-time":3,
-        "published-date":"March 13, 2023"
+        "author_name":"Abid Hasan",
+        "blog_title":"Optimizing Performance in React: Best Practices for Faster Apps",
+        "author_img":"https://scontent.fdac5-1.fna.fbcdn.net/v/t39.30808-1/326413514_1351354055625954_6838821030240734876_n.jpg?stp=dst-jpg_p320x320&_nc_cat=105&ccb=1-7&_nc_sid=f67be1&_nc_ohc=qdY90Nq03gEAX-jCnnG&_nc_ht=scontent.fdac5-1.fna&oh=00_AfCJn-wcCj1LDGgFoLNCwXFisq7aMQal5DmQEweRhUfn5Q&oe=642B76F8",
+        "blog_cover":"https://img.freepik.com/free-photo/mobiles-apps_53876-119987.jpg?w=996&t=st=1680188985~exp=1680189585~hmac=212ea1e2aa907bfb9182938ed1b40c85adf26375f24ab58632a8894626fc631b",
+        "read_time":3,
+        "published_date":"March 13, 2023"
     }
 ]
