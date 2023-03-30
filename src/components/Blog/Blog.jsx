@@ -11,8 +11,8 @@ const Blog = () => {
     }, [])
     return (
         <div>
-            <div className="blog flex flex-col-reverse lg:flex-row px-12">
-                <div className="blog-section w-full px-12">
+            <div className="blog flex flex-col-reverse lg:flex-row lg:px-12">
+                <div className="blog-section w-full lg:px-12">
                 {
                     blogs.map(blog=><SingleBlog 
                     key={blog.id}

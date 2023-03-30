@@ -6,32 +6,32 @@ const bookmarkColor = {
     color: "red"
 }
 const SingleBlog = ({blog}) => {
-    // const{id,author_name,}
+    const{id,author_name,blog_title,author_img,blog_cover,read_time,published_date}=blog;
     return (
         <div>
             <div className="single-card p-5">
                 <div>
-                    <img className='rounded-3xl h-96 w-full' src="https://img.freepik.com/free-photo/programming-script-text-coding-word_53876-64939.jpg?w=1060&t=st=1680188016~exp=1680188616~hmac=84085b8952e2d5703b719ab679ea772ad14f431ca321ebafec401b8359946398" alt="blogImg" />
+                    <img className='rounded-3xl lg:h-96 w-full' src={blog_cover} alt="blogImg" />
                 </div>
                 <div className='flex justify-between items-center mt-5'>
                     <div className='flex items-center gap-4'>
                         <div>
-                            <img className='w-16 rounded-full' src="https://yt3.googleusercontent.com/ytc/AL5GRJXZ3bjEdOHILjVQpNk6GPlLUrQspEoY4EIhN9hA4g=s900-c-k-c0x00ffffff-no-rj" alt="SmMunna" />
+                            <img className='w-16 rounded-full' src={author_img} alt="SmMunna" />
                         </div>
                         <div>
-                            <h2 className='username'>SM Munna</h2>
-                            <p className='date-text'>March 14, 2023</p>
+                            <h2 className='username'>{author_name}</h2>
+                            <p className='date-text'>{published_date}</p>
                         </div>
                     </div>
                     <div className='flex gap-3'>
-                        <div>05 Minit to read</div>
+                        <div>0{read_time} Minutes to read</div>
                         <div className='bookmark-icon'>
                             <FontAwesomeIcon className='cursor-pointer' style={bookmarkColor} title='Add to Bookmark' icon={faBookmark} />
                         </div>
                     </div>
                 </div>
                 <div className='my-3'>
-                    <h2 className='text-4xl font-bold'>How to get your first job as a self-taught programmer</h2>
+                    <h2 className='lg:text-4xl font-bold'>{blog_title}</h2>
                 </div>
                 <div className='hashtag mb-2'>
                     #beginner #programming #nothing

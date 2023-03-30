@@ -22,3 +22,12 @@
     height: 2px;
     background-color: rgb(206, 205, 205);
 }
+
+@media screen and (max-width:576px) {
+    .username{
+        font-size: 16px;
+    }
+    .date-text{
+        font-size: 14px;
+    }
+}
