@@ -1,4 +1,5 @@
 import './App.css'
+import Blog from './components/Blog/Blog'
 import Header from './components/Header/Header'
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <div className="App">
       <Header/>
       {/* <hr className='custom-divider'/> */}
+      <Blog/>
     </div>
   )
 }
