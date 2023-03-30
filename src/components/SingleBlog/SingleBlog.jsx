@@ -1,10 +1,10 @@
 import React from 'react';
 import './SingleBlog.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-  import { faBookmark } from '@fortawesome/free-solid-svg-icons'
-  const bookmarkColor ={
-    color:"red"
- }
+import { faBookmark } from '@fortawesome/free-solid-svg-icons'
+const bookmarkColor = {
+    color: "red"
+}
 const SingleBlog = () => {
     return (
         <div>
@@ -25,7 +25,7 @@ const SingleBlog = () => {
                     <div className='flex gap-3'>
                         <div>05 Minit to read</div>
                         <div className='bookmark-icon'>
-                        <FontAwesomeIcon className='cursor-pointer' style={bookmarkColor} title='Add to Bookmark' icon={faBookmark} />
+                            <FontAwesomeIcon className='cursor-pointer' style={bookmarkColor} title='Add to Bookmark' icon={faBookmark} />
                         </div>
                     </div>
                 </div>
