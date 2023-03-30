@@ -4,7 +4,7 @@ import Sidebar from '../Sidebar/Sidebar';
 import './Blog.css';
 const Blog = () => {
     const [blogs, setBlogs] = useState([]);
-    // const [readTime, setreadTime] = useState([]);
+    const [readTime, setreadTime] = useState("");
     
     useEffect(() => {
         fetch('brainwave.json')
@@ -18,8 +18,10 @@ const Blog = () => {
         if (previousReadTime) {
             const newReadTime = previousReadTime + read_time;
             localStorage.setItem('read-time',newReadTime);
+            setreadTime(newReadTime);
         } else {
             localStorage.setItem('read-time',read_time);
+            setreadTime(read_time);
         }
     }
     return (
@@ -36,7 +38,7 @@ const Blog = () => {
                 }
                 </div>
                 <div className="sidebar w-full lg:w-96 mt-8">
-                    <Sidebar/>
+                    <Sidebar readTime={readTime}/>
                 </div>
             </div>
         </div>
