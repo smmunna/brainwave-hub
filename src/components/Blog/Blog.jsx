@@ -4,7 +4,7 @@ import Sidebar from '../Sidebar/Sidebar';
 import './Blog.css';
 const Blog = () => {
     const [blogs, setBlogs] = useState([]);
-    const [markasRead, setMarkasRead] = useState([]);
+    // const [readTime, setreadTime] = useState([]);
     
     useEffect(() => {
         fetch('brainwave.json')
@@ -13,16 +13,15 @@ const Blog = () => {
     }, [])
 
     // Onclick button added from SingleBox.jsx;
-    const handleMarkasRead = (id)=>{
-        // console.log(blogs)
-        for (const uid of blogs) {
-            const findSingleMarkasRead = blogs.find(blog=>uid.id===id)
-            if(findSingleMarkasRead){
-                setMarkasRead(findSingleMarkasRead)
-            }  
+    const handleMarkasRead = (read_time)=>{
+        const previousReadTime = JSON.parse(localStorage.getItem('read-time'))
+        if (previousReadTime) {
+            const newReadTime = previousReadTime + read_time;
+            localStorage.setItem('read-time',newReadTime);
+        } else {
+            localStorage.setItem('read-time',read_time);
         }
     }
-console.log(markasRead.id)
     return (
         <div>
             <div className="blog flex flex-col-reverse lg:flex-row lg:px-12">
@@ -37,7 +36,7 @@ console.log(markasRead.id)
                 }
                 </div>
                 <div className="sidebar w-full lg:w-96 mt-8">
-                    <Sidebar />
+                    <Sidebar/>
                 </div>
             </div>
         </div>

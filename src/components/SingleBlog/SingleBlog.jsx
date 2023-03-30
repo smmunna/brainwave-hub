@@ -38,7 +38,7 @@ const SingleBlog = ({ blog,handleMarkasRead }) => {
                 </div>
                 <div className='marks-as-read'>
                     {/* Pass to the function handleMarkasRead() in Blog.jsx file */}
-                    <a onClick={()=>handleMarkasRead(id)}>Mark as read</a>
+                    <a onClick={()=>handleMarkasRead(read_time)}>Mark as read</a>
                 </div>
             </div>
 
