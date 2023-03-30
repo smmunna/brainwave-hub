@@ -15,3 +15,10 @@
 .marks-as-read a{
     text-decoration: underline;
 }
+
+.custom-divider{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    height: 2px;
+    background-color: rgb(206, 205, 205);
+}

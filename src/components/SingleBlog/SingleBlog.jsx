@@ -1,5 +1,10 @@
 import React from 'react';
 import './SingleBlog.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+  import { faBookmark } from '@fortawesome/free-solid-svg-icons'
+  const bookmarkColor ={
+    color:"red"
+ }
 const SingleBlog = () => {
     return (
         <div>
@@ -17,9 +22,11 @@ const SingleBlog = () => {
                             <p className='date-text'>March 14, 2023</p>
                         </div>
                     </div>
-                    <div>
+                    <div className='flex gap-3'>
                         <div>05 Minit to read</div>
-                        <div>Bookmarks icon</div>
+                        <div className='bookmark-icon'>
+                        <FontAwesomeIcon className='cursor-pointer' style={bookmarkColor} title='Add to Bookmark' icon={faBookmark} />
+                        </div>
                     </div>
                 </div>
                 <div className='my-3'>
@@ -32,6 +39,8 @@ const SingleBlog = () => {
                     <a href="#">Mark as read</a>
                 </div>
             </div>
+
+            <hr className='custom-divider' />
         </div>
     );
 }
