@@ -11,8 +11,8 @@ const Blog = () => {
     },[])
     return (
         <div>
-            <div className="blog flex flex-col-reverse lg:flex-row">
-                <div className="blog-section w-full p-4">
+            <div className="blog flex flex-col-reverse lg:flex-row px-12">
+                <div className="blog-section w-full px-12">
                     <SingleBlog/>
                 </div>
                 <div className="sidebar w-full lg:w-96 p-4">

@@ -1,0 +1,17 @@
+.date-text{
+    font-size: 16px;
+    color: #5c5b5b;
+}
+.username{
+    font-size: 24px;
+    font-weight: 400;
+}
+.hashtag{
+    color: #777676;
+}
+.marks-as-read{
+    color: blue;
+}
+.marks-as-read a{
+    text-decoration: underline;
+}
