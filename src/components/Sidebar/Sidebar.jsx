@@ -3,7 +3,9 @@ import './Sidebar.css';
 const Sidebar = () => {
     return (
         <div>
-            <h3>SideBar</h3>
+            <div className="spent-time">
+                <h2>Spent time on read: 177 min</h2>
+            </div>
         </div>
     );
 }

@@ -5,8 +5,8 @@ import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 const bookmarkColor = {
     color: "red"
 }
-const SingleBlog = ({blog}) => {
-    const{id,author_name,blog_title,author_img,blog_cover,read_time,published_date}=blog;
+const SingleBlog = ({ blog,handleMarkasRead }) => {
+    const { id, author_name, blog_title, author_img, blog_cover, read_time, published_date } = blog;
     return (
         <div>
             <div className="single-card p-5">
@@ -37,7 +37,8 @@ const SingleBlog = ({blog}) => {
                     #beginner #programming #nothing
                 </div>
                 <div className='marks-as-read'>
-                    <a href="#">Mark as read</a>
+                    {/* Pass to the function handleMarkasRead() in Blog.jsx file */}
+                    <a onClick={()=>handleMarkasRead(id)}>Mark as read</a>
                 </div>
             </div>
 
