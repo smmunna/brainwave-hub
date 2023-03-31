@@ -1,7 +1,6 @@
 import React from 'react';
-import './SingleBlog.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBookmark } from '@fortawesome/free-solid-svg-icons'
+import './SingleBlog.css';
+
 const bookmarkColor = {
     color: "red"
 }
