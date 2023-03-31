@@ -26,8 +26,12 @@ const Blog = () => {
     }
 
     // Handle Bookmarked blogs;
-    const handleBookmarkedBlog = (blog_title) =>{
-        console.log('Okay',blog_title);
+    let bookmarkList = [];
+
+    const handleBookmarkedBlog = (blog_title) => {
+        let mybookMark = blog_title;
+        bookmarkList.push(mybookMark);
+        console.log(bookmarkList);
     }
 
     return (
