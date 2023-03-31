@@ -5,6 +5,7 @@ import './Blog.css';
 const Blog = () => {
     const [blogs, setBlogs] = useState([]);
     const [readTime, setreadTime] = useState("");
+    const [bookmarked,setBookmarked] = useState([]);
 
     useEffect(() => {
         fetch('brainwave.json')
@@ -31,7 +32,7 @@ const Blog = () => {
     const handleBookmarkedBlog = (blog_title) => {
         let mybookMark = blog_title;
         bookmarkList.push(mybookMark);
-        console.log(bookmarkList);
+        setBookmarked(bookmarkList);
     }
 
     return (
