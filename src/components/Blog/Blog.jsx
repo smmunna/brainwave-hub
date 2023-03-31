@@ -2,11 +2,10 @@ import React, { useEffect, useState } from 'react';
 import SingleBlog from '../SingleBlog/SingleBlog';
 import Sidebar from '../Sidebar/Sidebar';
 import './Blog.css';
-import { addToDb } from '../Utilities/fakeDb';
 const Blog = () => {
     const [blogs, setBlogs] = useState([]);
     const [readTime, setreadTime] = useState("");
-    const [bookmarked,setBookmarked] = useState([]);
+    const [bookmarked, setBookmarked] = useState([]);
 
     useEffect(() => {
         fetch('brainwave.json')
@@ -29,7 +28,7 @@ const Blog = () => {
 
     // Handle Bookmarked blogs;
     const handleBookmarkedBlog = (blog_title) => {
-        setBookmarked([...bookmarked,blog_title]);
+        setBookmarked([...bookmarked, blog_title]);
     }
 
     return (
@@ -48,10 +47,10 @@ const Blog = () => {
                     }
                 </div>
                 <div className="sidebar m-2 lg:mt-6">
-                    <Sidebar 
-                    readTime={readTime}
-                    bookmarked={bookmarked}
-                     />
+                    <Sidebar
+                        readTime={readTime}
+                        bookmarked={bookmarked}
+                    />
                 </div>
             </div>
         </div>
@@ -59,6 +58,3 @@ const Blog = () => {
 }
 
 export default Blog;
-
-// flex flex-col-reverse lg:flex-row lg:px-12
-// w-full lg:w-96 mt-8
