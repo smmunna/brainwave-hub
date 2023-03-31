@@ -23,7 +23,7 @@ const Sidebar = ({ readTime, bookmarked }) => {
                 <h2>Bookmarked Blogs: {counter} </h2>
                 {
                     bookmarked.map(bookmark => <>
-                        <div className='bookmarked-text' key={counter}>
+                        <div className='bookmarked-text' key={bookmark}>
                             {bookmark}
                         </div>
                     </>)
