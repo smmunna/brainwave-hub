@@ -5,7 +5,7 @@ import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 const bookmarkColor = {
     color: "red"
 }
-const SingleBlog = ({ blog,handleMarkasRead }) => {
+const SingleBlog = ({ blog,handleMarkasRead,handleBookmarkedBlog }) => {
     const { id, author_name, blog_title, author_img, blog_cover, read_time, published_date } = blog;
     return (
         <div>
@@ -26,7 +26,7 @@ const SingleBlog = ({ blog,handleMarkasRead }) => {
                     <div className='flex gap-3'>
                         <div>0{read_time} Minutes to read</div>
                         <div className='bookmark-icon'>
-                            <FontAwesomeIcon className='cursor-pointer' style={bookmarkColor} title='Add to Bookmark' icon={faBookmark} />
+                            <FontAwesomeIcon onClick={()=>handleBookmarkedBlog(blog_title)} className='cursor-pointer' style={bookmarkColor} title='Add to Bookmark' icon={faBookmark} />
                         </div>
                     </div>
                 </div>
