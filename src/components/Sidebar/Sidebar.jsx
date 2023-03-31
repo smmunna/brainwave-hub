@@ -28,7 +28,6 @@ const Sidebar = ({ readTime, bookmarked }) => {
                         </div>
                     </>)
                 }
-
             </div>
         </div>
     );
