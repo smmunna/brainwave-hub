@@ -1,11 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import './Sidebar.css';
-const Sidebar = ({ readTime }) => {
+const Sidebar = ({ readTime, bookmarked }) => {
     const [getreadTime, setgetReadTime] = useState(readTime);
+    // const[counter,setCounter]=useState(0);
+    // const[bookmarkItem,setBookmarkItem]=useState("");
     useEffect(() => {
         const getReadTime = JSON.parse(localStorage.getItem('read-time'));
         setgetReadTime(getReadTime)
-    }, [readTime])
+    }, [readTime]);
+
+    console.log(bookmarked)
+
     return (
         <div>
             <div className="spent-time text-center">
@@ -13,10 +18,15 @@ const Sidebar = ({ readTime }) => {
             </div>
             {/* BookedMarked Blogs */}
             <div className='bookmarked-blog mt-5 p-7'>
-                <h2>Bookmarked Blogs: 8</h2>
-                <div className='bookmarked-text'>
-                    Master MicroSoft Power Platfor and Become and in Demand !
-                </div>
+                <h2>Bookmarked Blogs: </h2>
+                {
+                    bookmarked.map(bookmark => <>
+                        <div className='bookmarked-text'>
+                            {bookmark}
+                        </div>
+                    </>)
+                }
+
             </div>
         </div>
     );

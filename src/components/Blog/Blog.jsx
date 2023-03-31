@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import SingleBlog from '../SingleBlog/SingleBlog';
 import Sidebar from '../Sidebar/Sidebar';
 import './Blog.css';
+import { addToDb } from '../Utilities/fakeDb';
 const Blog = () => {
     const [blogs, setBlogs] = useState([]);
     const [readTime, setreadTime] = useState("");
@@ -27,12 +28,8 @@ const Blog = () => {
     }
 
     // Handle Bookmarked blogs;
-    let bookmarkList = [];
-
     const handleBookmarkedBlog = (blog_title) => {
-        let mybookMark = blog_title;
-        bookmarkList.push(mybookMark);
-        setBookmarked(bookmarkList);
+        setBookmarked([...bookmarked,blog_title]);
     }
 
     return (
@@ -51,7 +48,10 @@ const Blog = () => {
                     }
                 </div>
                 <div className="sidebar m-2 lg:mt-6">
-                    <Sidebar readTime={readTime} />
+                    <Sidebar 
+                    readTime={readTime}
+                    bookmarked={bookmarked}
+                     />
                 </div>
             </div>
         </div>
