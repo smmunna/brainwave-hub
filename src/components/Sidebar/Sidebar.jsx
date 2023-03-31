@@ -3,7 +3,7 @@ import './Sidebar.css';
 const Sidebar = ({ readTime, bookmarked }) => {
     const [getreadTime, setgetReadTime] = useState(readTime);
     const [counter, setCounter] = useState(0);
-    
+
     useEffect(() => {
         const getReadTime = JSON.parse(localStorage.getItem('read-time'));
         setgetReadTime(getReadTime)
