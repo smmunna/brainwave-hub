@@ -13,7 +13,7 @@ const Sidebar = ({ readTime, bookmarked }) => {
         setCounter(bookmarked.length)
     }, [bookmarked])
 
-    const clearSpentTime =(value)=>{
+    const clearSpentTime = (value) => {
         localStorage.clear();
         setgetReadTime(value);
     }
@@ -36,7 +36,7 @@ const Sidebar = ({ readTime, bookmarked }) => {
             </div>
 
             <div className='text-center mt-2'>
-                <button className='btn btn-primary' onClick={()=>clearSpentTime(0)}>Clear Spent Time</button>
+                <button className='btn btn-primary' onClick={() => clearSpentTime(0)}>Clear Spent Time</button>
             </div>
         </div>
     );
