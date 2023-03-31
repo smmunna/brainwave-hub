@@ -1,22 +1,26 @@
-.date-text{
+.date-text {
     font-size: 16px;
     color: #5c5b5b;
 }
-.username{
+
+.username {
     font-size: 24px;
     font-weight: 400;
 }
-.hashtag{
+
+.hashtag {
     color: #777676;
 }
-.marks-as-read{
+
+.marks-as-read {
     color: blue;
 }
-.marks-as-read a{
+
+.marks-as-read a {
     text-decoration: underline;
 }
 
-.custom-divider{
+.custom-divider {
     margin-top: 8px;
     margin-bottom: 8px;
     height: 2px;
@@ -24,10 +28,11 @@
 }
 
 @media screen and (max-width:576px) {
-    .username{
+    .username {
         font-size: 16px;
     }
-    .date-text{
+
+    .date-text {
         font-size: 14px;
     }
 }
