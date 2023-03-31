@@ -37,7 +37,7 @@ const Blog = () => {
                      />)
                 }
                 </div>
-                <div className="sidebar lg:mt-6">
+                <div className="sidebar m-2 lg:mt-6">
                     <Sidebar readTime={readTime}/>
                 </div>
             </div>
