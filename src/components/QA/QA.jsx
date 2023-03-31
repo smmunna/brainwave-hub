@@ -1,5 +1,4 @@
 import React from 'react';
-import State from '../../images/state.PNG'
 const QA = () => {
     return (
         <div className='p-5 lg:px-16'>
@@ -11,10 +10,15 @@ const QA = () => {
             </div>
             <div className='p-2  rounded m-2'>
                 <h2 className='text-2xl font-semibold'>How does useState work..?</h2>
-                    <img src={State} alt="" />
-                <p>
-                    
+                <img className='rounded mt-2' src="https://raw.githubusercontent.com/smmunna/images/main/state.PNG" alt="" />
+                <p className='mt-3'>
+                In this example, the useState hook is used to create a state variable count and a callback function setCount that can be used to update the state. The initial value of the count variable is 0. When the button is clicked, which calls setCount with the new value of count. This causes React to re-render the component with the new state value.
                 </p>
+            </div>
+            <div className='p-2  rounded m-2'>
+                <h2 className='text-2xl font-semibold'>Purpose of useEffect()</h2>
+                <p>It allows us to execute some code after rendering our component, such as updating the DOM, fetching data from an API.</p>
+                <p>2.State can be change but props can not change (read only)</p>
             </div>
             <div className='p-2  rounded m-2'>
                 <h2 className='text-2xl font-semibold'>Props vs State</h2>
