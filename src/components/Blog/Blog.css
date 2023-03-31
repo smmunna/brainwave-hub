@@ -1,21 +1,10 @@
-.blog{
+.blog {
     display: grid;
     grid-template-columns: 3fr 2fr;
 }
 
-@media  screen and (max-width:576px) {
-   .blog{
-    grid-template-columns: 1fr;
-   }
+@media screen and (max-width:576px) {
+    .blog {
+        grid-template-columns: 1fr;
+    }
 }
-
-/* .blog-section{
-    background-color: aquamarine;
-}
-.sidebar{
-    background-color: antiquewhite;
-} */
-/* .sidebar{
-    position: sticky;
-    top: 0;
-} */
