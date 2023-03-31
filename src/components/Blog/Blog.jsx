@@ -24,6 +24,12 @@ const Blog = () => {
             setreadTime(read_time);
         }
     }
+
+    // Handle Bookmarked blogs;
+    const handleBookmarkedBlog = () =>{
+        console.log('Okay');
+    }
+
     return (
         <div>
             <div className="blog lg:px-16">
@@ -34,6 +40,8 @@ const Blog = () => {
                             blog={blog}
                             // passing the function to SingleBlog.jsx;
                             handleMarkasRead={handleMarkasRead}
+                            // For bookmarked functionality;
+                            handleBookmarkedBlog={handleBookmarkedBlog}
                         />)
                     }
                 </div>
