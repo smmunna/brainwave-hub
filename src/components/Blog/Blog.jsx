@@ -26,7 +26,7 @@ const Blog = () => {
     }
     return (
         <div>
-            <div className="blog flex flex-col-reverse lg:flex-row lg:px-12">
+            <div className="blog lg:px-16">
                 <div className="blog-section lg:px-2">
                 {
                     blogs.map(blog=><SingleBlog 
@@ -37,7 +37,7 @@ const Blog = () => {
                      />)
                 }
                 </div>
-                <div className="sidebar w-full lg:w-96 mt-8">
+                <div className="sidebar lg:mt-6">
                     <Sidebar readTime={readTime}/>
                 </div>
             </div>
@@ -46,3 +46,6 @@ const Blog = () => {
 }
 
 export default Blog;
+
+// flex flex-col-reverse lg:flex-row lg:px-12
+// w-full lg:w-96 mt-8

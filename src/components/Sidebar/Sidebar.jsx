@@ -8,7 +8,7 @@ const Sidebar = ({readTime}) => {
    },[readTime])
     return (
         <div>
-            <div className="spent-time">
+            <div className="spent-time text-center">
                 <h2>Spent time on read: {getreadTime?getreadTime:0} min</h2>
             </div>
         </div>

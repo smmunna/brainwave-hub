@@ -1,13 +1,13 @@
-/* .blog{
+.blog{
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 3fr 2fr;
 }
 
 @media  screen and (max-width:576px) {
-    .blog{
+    /* .blog{
         grid-column-end: span 2;
-    }
-} */
+    } */
+}
 
 /* .blog-section{
     background-color: aquamarine;
