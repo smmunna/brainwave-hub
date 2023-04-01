@@ -4,14 +4,13 @@ import './SingleBlog.css';
 const bookmarkColor = {
     color: "black"
 }
-const SingleBlog = ({ blogs, blog, handleMarkasRead, handleBookmarkedBlog }) => {
+const SingleBlog = ({ blog, handleMarkasRead, handleBookmarkedBlog }) => {
     const { id, author_name, blog_title, author_img, blog_cover, read_time, published_date } = blog;
 
     // Bookmark Fill color change;
     const [isBookmarkColor, setIsBookMarkColor] = useState(false);
     const handleBookmarkColor = () => {
         setIsBookMarkColor(!isBookmarkColor);
-        // console.log(blogs)
     }
 
     return (
