@@ -2,7 +2,14 @@
     display: grid;
     grid-template-columns: 3fr 2fr;
 }
-
+.toast-message {
+    background: darkblue;
+    color: #fff;
+    font-size: 20px;
+    width: 100%;
+    /* width: 34vw; */
+    padding: 30px 20px;
+}
 @media screen and (max-width:576px) {
     .blog {
         grid-template-columns: 1fr;

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import SingleBlog from '../SingleBlog/SingleBlog';
 import Sidebar from '../Sidebar/Sidebar';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './Blog.css';
 const Blog = () => {
     const [blogs, setBlogs] = useState([]);
@@ -32,7 +34,10 @@ const Blog = () => {
             setBookmarked([...bookmarked, blog_title]);
           }
           else{
-            alert('Already added');
+            toast.warning('You have already added this Item !', {
+                position: toast.POSITION.BOTTOM_RIGHT,
+                className: 'toast-message'
+            });
           }
     }
 
@@ -60,6 +65,7 @@ const Blog = () => {
                     />
                 </div>
             </div>
+            <ToastContainer />
         </div>
     );
 }
