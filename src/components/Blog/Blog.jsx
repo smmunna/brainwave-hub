@@ -28,7 +28,12 @@ const Blog = () => {
 
     // Handle Bookmarked blogs;
     const handleBookmarkedBlog = (blog_title) => {
-        setBookmarked([...bookmarked, blog_title]);
+        if (!bookmarked.includes(blog_title)) {
+            setBookmarked([...bookmarked, blog_title]);
+          }
+          else{
+            alert('Already added');
+          }
     }
 
     return (
@@ -39,6 +44,8 @@ const Blog = () => {
                         blogs.map(blog => <SingleBlog
                             key={blog.id}
                             blog={blog}
+                            // Passing the array to Single Blog Components;
+                            blogs={blogs}
                             // passing the function to SingleBlog.jsx;
                             handleMarkasRead={handleMarkasRead}
                             // For bookmarked functionality;
