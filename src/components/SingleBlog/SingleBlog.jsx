@@ -10,7 +10,9 @@ const SingleBlog = ({ blog, handleMarkasRead, handleBookmarkedBlog }) => {
     // Bookmark Fill color change;
     const [isBookmarkColor, setIsBookMarkColor] = useState(false);
     const handleBookmarkColor = () => {
-        setIsBookMarkColor(!isBookmarkColor);
+        if (!isBookmarkColor) {
+            setIsBookMarkColor(true);
+          }
     }
 
     return (
