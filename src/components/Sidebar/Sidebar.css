@@ -4,6 +4,8 @@
     border: 2px solid rgba(0, 0, 255, 0.162);
     padding: 30px;
     background-color: rgba(86, 96, 210, 0.153);
+    color: rgb(66, 66, 228);
+    font-weight: bold;
 }
 
 .bookmarked-blog {
