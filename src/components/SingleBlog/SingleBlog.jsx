@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './SingleBlog.css';
 
 const bookmarkColor = {
@@ -6,6 +6,13 @@ const bookmarkColor = {
 }
 const SingleBlog = ({ blog, handleMarkasRead, handleBookmarkedBlog }) => {
     const { id, author_name, blog_title, author_img, blog_cover, read_time, published_date } = blog;
+
+    // Bookmark Fill color change;
+    const[isBookmarkColor,setIsBookMarkColor]=useState(false);
+    const handleBookmarkColor = ()=>{
+        setIsBookMarkColor(!isBookmarkColor);
+    }
+    
     return (
         <div>
             <div className="single-card p-5">
@@ -26,7 +33,7 @@ const SingleBlog = ({ blog, handleMarkasRead, handleBookmarkedBlog }) => {
                         <div>0{read_time} Minutes to read</div>
                         <div className='bookmark-icon'>
                             <span onClick={() => handleBookmarkedBlog(blog_title)} className='cursor-pointer' style={bookmarkColor} title='Add to Bookmark'>
-                                <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                                <svg onClick={()=>handleBookmarkColor()}  xmlns="http://www.w3.org/2000/svg" fill={isBookmarkColor?'red' : 'none'} viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
                                 </svg>
                             </span>

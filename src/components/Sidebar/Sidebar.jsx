@@ -19,8 +19,8 @@ const Sidebar = ({ readTime, bookmarked }) => {
     }
 
     return (
-        <div>
-            <div className="spent-time text-center">
+        <div className='lg:sticky lg:top-2'>
+            <div className="spent-time text-center ">
                 <h2>Spent time on read: {getreadTime ? getreadTime : 0} min</h2>
             </div>
             {/* BookedMarked Blogs */}
